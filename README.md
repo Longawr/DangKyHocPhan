@@ -28,15 +28,15 @@
 ```
 
 ### Sửa file `application.yaml` tại `src/main/java/resources` như sau:
-- `default.admin.username`: là username admin mặc định khởi tạo
-- `default.admin.password`: là password admin mặc định khi khởi tạo
+- `default.admin.username`: là `username` admin mặc định khởi tạo
+- `default.admin.password`: là `password` admin mặc định khi khởi tạo
 
-- `jwt.signerKey`: là khoá mã hoá json web token
-- `jwt.refresh-duration`: là khoảng thời gian có hiệu lực của refresh token (s)
-- `jwt.access-duration`: là khoảng thời gian có hiệu lực của access token (s)
+- `jwt.signerKey`: là khoá mã hoá `json web token`
+- `jwt.refresh-duration`: là khoảng thời gian có hiệu lực của `refresh token` (s)
+- `jwt.access-duration`: là khoảng thời gian có hiệu lực của `access token` (s)
 
-- `spring.datasource.url`: là url dẫn đến database của bạn, trong này bao gồm host, port và tên database
-- `spring.datasource.username`: là username có quyền truy cập vào database
-- `spring.datasource.password`: là password cho username trên
-- `spring.datasource.driver-class-name`: là tên driver của database tuỳ theo loại database sử dụng (cái này search gg)
+- `spring.datasource.url`: là url dẫn đến database của bạn, trong này bao gồm `host`, `port` và `tên database`
+- `spring.datasource.username`: là `username` có quyền truy cập vào database
+- `spring.datasource.password`: là `password` cho username trên
+- `spring.datasource.driver-class-name`: là `tên driver` của database tuỳ theo loại database sử dụng (cái này search gg)
 
