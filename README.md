@@ -10,7 +10,7 @@
 
 ## Hướng dẫn cài đặt
 
-- Cần Database bất kỳ, Java Development Kit 17, Inteliji để sử dụng.
+- Cần Database bất kỳ, Java Development Kit 17, Eclipse để sử dụng.
 - Tạo trước database với `tên database`.
 - Mở project bằng maven: `file -> import -> exist maven project`.
 - Build trước khi khởi chạy:
@@ -18,7 +18,7 @@
     - Nhập: `mvnw clean install` hoặc `mvnw.cmd clean install`. Với `mvnw` hoặc `mvnw.cmd` là tên 2 file trong thư mục gốc của project của bạn (sử dụng `eclipse`, có thể thử `mvn` thay thế).
 
 ### Đổi dependency cho database nếu dùng database khác ngoài sqlserver như sau:
-- Đổi dòng sau thành dependency của database bạn dùng (có thể tìm trên [Maven Repository](https://mvnrepository.com)):
+- Đổi dòng sau thành `dependency` của database bạn dùng (có thể tìm trên [Maven Repository](https://mvnrepository.com)):
 ```xml
 <dependency>
 	<groupId>com.microsoft.sqlserver</groupId>
@@ -27,7 +27,7 @@
 </dependency>
 ```
 
-### Sửa file "application.yaml" tại src/main/java/resources như sau:
+### Sửa file `application.yaml` tại `src/main/java/resources` như sau:
 - `default.admin.username`: là username admin mặc định khởi tạo
 - `default.admin.password`: là password admin mặc định khi khởi tạo
 
