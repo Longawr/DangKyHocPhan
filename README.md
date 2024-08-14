@@ -12,8 +12,8 @@
 
 - Cần Database bất kỳ, Java Development Kit 17, Inteliji để sử dụng.
 - Tạo trước database với `tên database`.
-- Mở project bằng maven: file -> import -> `exist maven project`.
-- Build trước khi khởi chạy: ấn chuột phải vào project -> chọn `Show in Local Terminal` -> Terminal. Hoặc nhấn Tổ hợp phím `Ctrl + Alt + T`.
+- Mở project bằng maven: `file -> import -> exist maven project`.
+- Build trước khi khởi chạy: `chuột phải project -> Show in Local Terminal -> Terminal`. Hoặc nhấn Tổ hợp phím `Ctrl + Alt + T`.
 
 ### Đổi dependency cho database nếu dùng database khác ngoài sqlserver như sau:
 - Đổi dòng sau thành dependency của database bạn dùng (có thể tìm trên [Maven Repository](https://mvnrepository.com)):
