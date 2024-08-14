@@ -1,0 +1,45 @@
+default.admin:
+   username: admin
+   password: admin
+
+jwt:
+   signerKey: +4kJHuZ1dH5r7PRv5NTFvF+rxZiVc5i2sK9H+cjC6+2Ikd0m2TAs8hK0OgfHcrKl
+   access-duration: 1800 # in second (30m)
+   refresh-duration: 604800 # in seconds (7d)
+   
+server:
+   port: 8080
+   shutdown: graceful
+#   access-duration: 18000 # debug
+
+spring:
+   application:
+      name: courseRegistration
+   datasource:
+      url: jdbc:sqlserver://localhost:1433;trustServerCertificate=true;databaseName=CourseRegistration
+      username: javaApp
+      password: 123456@Aa
+      driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+      hikari:
+         minimum-idle: 5            # Minimum number of idle connections
+         maximum-pool-size: 20       # Maximum number of connections
+         idle-timeout: 30000         # 30 seconds before an idle connection is removed
+         max-lifetime: 1800000 # 30 minutes
+         connection-timeout: 30000 # 30 seconds
+   jpa:
+      open-in-view: true
+#      show-sql: true #debug
+   hibernate:
+      ddl-auto: update
+      jdbc.batch_size: 20
+      order_inserts: true
+      order_updates: true
+      id.new_generator_mappings: true
+      transaction.jta.platform: org.springframework.transaction.jta.JtaTransactionManager
+   cache.caffeine.spec: maximumSize=100,expireAfterWrite=5m
+
+logging:
+  level:
+    org.hibernate:
+       SQL: INFO
+       type.descriptor.sql.BasicBinder: TRACE
