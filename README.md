@@ -13,7 +13,9 @@
 - Cần Database bất kỳ, Java Development Kit 17, Inteliji để sử dụng.
 - Tạo trước database với `tên database`.
 - Mở project bằng maven: `file -> import -> exist maven project`.
-- Build trước khi khởi chạy: `chuột phải project -> Show in Local Terminal -> Terminal`. Hoặc nhấn Tổ hợp phím `Ctrl + Alt + T`.
+- Build trước khi khởi chạy:
+    - `chuột phải project -> Show in Local Terminal -> Terminal`, hoặc nhấn Tổ hợp phím `Ctrl + Alt + T`.
+    - Nhập: `mvnw clean install` hoặc `mvnw.cmd clean install`. Với `mvnw` hoặc `mvnw.cmd` là tên 2 file trong thư mục gốc của project của bạn (sử dụng `eclipse`, có thể thử `mvn` thay thế).
 
 ### Đổi dependency cho database nếu dùng database khác ngoài sqlserver như sau:
 - Đổi dòng sau thành dependency của database bạn dùng (có thể tìm trên [Maven Repository](https://mvnrepository.com)):
