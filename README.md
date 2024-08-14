@@ -10,7 +10,7 @@
 
 ## Hướng dẫn cài đặt
 
-- Cần Database bất kỳ, Java Development Kit 17, Eclipse để sử dụng.
+- Cần `sql database` bất kỳ, JDK 17 (Java SE 17) để sử dụng.
 - Tạo trước database với `tên database`.
 - Mở project bằng maven: `file -> import -> exist maven project`.
 - Build trước khi khởi chạy:
