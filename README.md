@@ -1,6 +1,6 @@
 # DKHP_BE_Project
 - Backend ứng dụng đăng ký học phần
-- Công nghệ: Java, Spring boot, Security, Validation, Lombok,...
+- Công nghệ: Java, Spring boot, Security, Validation, Lombok, mapStruct...
 - Chức năng:
     - jwt và authorize.
     - CRUD cơ bản.
@@ -8,7 +8,7 @@
     - Validation.
     - Cache.
 
-## Hướng dẫn cài đặt
+## Hướng dẫn cài đặt (Eclipse)
 
 - Cần `sql database` bất kỳ, JDK 17 (Java SE 17) để sử dụng.
 - Tạo trước database với `tên database`.
