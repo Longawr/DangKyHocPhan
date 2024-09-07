@@ -22,7 +22,8 @@ public enum ErrorCode {
     PAGE_NOT_FOUND(1014, "Url not recognize", HttpStatus.NOT_FOUND),
     MEDIA_TYPE_NOT_SUPPORTED(1015, "Content-Type of request is not supported", HttpStatus.BAD_REQUEST),
     MISSING_BODY(1016, "Missing body", HttpStatus.BAD_REQUEST),
-    MISSING_PARAMS(1017, "Missing params", HttpStatus.BAD_REQUEST);
+    MISSING_PARAMS(1017, "Missing params", HttpStatus.BAD_REQUEST),
+    COURSE_FULL(1018, "Course full", HttpStatus.BAD_REQUEST);
 
     private final int id;
     private final String message;

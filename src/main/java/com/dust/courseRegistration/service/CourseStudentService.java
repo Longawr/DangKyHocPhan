@@ -63,6 +63,9 @@ public class CourseStudentService {
     public CourseStudent createCourseStudent(CourseStudentCreateRequest request) {
 
         Course crs = crsService.getCourse(request.courseId());
+        if (crs.getRegisterSlot() >= crs.getMaxSlot()) {
+            throw new AppException(ErrorCode.COURSE_FULL);
+        }
         Student std = stdService.getStudent(request.studentId());
 
         var cs = CourseStudent.builder()
